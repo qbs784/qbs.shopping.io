@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+    <title>shopping list</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
+</head>
+<body>
+
+<header class="bg-dark text-light py-3">
+    <div class="container">
+        <h1>IEMS5718</h1>
+    </div>
+</header>
+
+<main>
+    <div class="container">
+        <div class="row">
+            <nav class="col-2">
+                <ul class="menu">
+                    <li class="category" data-category="Furniture">Furniture</li>
+                    <li class="category" data-category="Lamps">Lamps</li>
+                </ul>
+            </nav>
+            <section class="col-10">
+                <section class="row" id="navigation">
+                    <section class="col-9">
+                        <span id="first-nav">
+                            <a href="index.html">Home</a>
+                        </span>
+                        <span id="second-nav">
+                            <a href="#" id="category-link">Category</a>
+                        </span>
+                        <span id="third-nav">
+                            <a href="#">Product</a>
+                        </span>
+                    </section>
+                    <section class="col-3">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" id="cart-button">🛒</button>
+                        <div id="dropdown" class="dropdown-content">
+                            <h3>Shopping Cart</h3>
+                            <ul id="shopping-list">
+                            </ul>
+                            <p id="total">Total: $0</p>
+                            <button type="button" class="btn btn-primary">Checkout</button>
+                        </div>
+                    </section>
+                </section>
+                <section class="grid" id="product-list">
+                </section>
+                <iframe src="product.html" width="100%" height="400px" id="productPage" style="display: none;"></iframe>
+            </section>
+        </div>
+    </div>
+</main>
+
+<script src="static/js/script.js"></script>
+</body>
+
